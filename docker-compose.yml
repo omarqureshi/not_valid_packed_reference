@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  sass:
+    build: .
+    command: bundle install --path vendor/bundle
+    volumes:
+      - "${HOST_VOLUME_PATH:-/development}/not_valid_packed_reference:/myapp"
